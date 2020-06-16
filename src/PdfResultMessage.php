@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Vrok\PdfService\Contracts;
@@ -17,9 +18,6 @@ class PdfResultMessage implements TaskIdentifierMessageInterface
         $this->pdfContent = $pdfContent;
     }
 
-    /**
-     * @return string
-     */
     public function getPdfContent(): string
     {
         return $this->pdfContent;

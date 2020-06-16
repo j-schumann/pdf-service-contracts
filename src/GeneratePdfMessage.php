@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Vrok\PdfService\Contracts;
@@ -10,9 +11,6 @@ class GeneratePdfMessage implements TaskIdentifierMessageInterface
 {
     use TaskIdentifierMessageTrait;
 
-    /**
-     * @var string
-     */
     private string $latex;
 
     public function __construct(string $latex)
@@ -20,9 +18,6 @@ class GeneratePdfMessage implements TaskIdentifierMessageInterface
         $this->latex = $latex;
     }
 
-    /**
-     * @return string
-     */
     public function getLatex(): string
     {
         return $this->latex;
