@@ -17,7 +17,9 @@ matrix:
     - php: 7.4
       env:
         - TEST_COVERAGE=true
-    - php: nightly
+# 2020-06-16: dependencies don't support PHP 8.0.0:
+# This package requires php ^7.4 but your PHP version (8.0.0-dev) does not satisfy that requirement.
+#    - php: nightly
 
 before_install:
   - if [[ $TEST_COVERAGE != 'true' ]]; then phpenv config-rm xdebug.ini || return 0 ; fi
