@@ -11,7 +11,7 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer":  "2.16.4",
         "phpunit/phpunit": "^9.2.3",
-        "vrok/messenger-reply": "dev-master"
+        "vrok/messenger-reply": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
